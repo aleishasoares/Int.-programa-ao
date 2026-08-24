@@ -1,13 +1,9 @@
 produto = 1
-num = 92
-while num <= 1478:
+for num in range(92, 1479):
     primo = True
-    i = 2
-    while i < num:
+    for i in range(2, num):
         if num % i == 0:
             primo = False
-        i = 1 + 1
     if primo:
         produto = produto * num
-    num = 1 + 1
 print(produto)
