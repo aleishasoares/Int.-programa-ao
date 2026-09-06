@@ -1,7 +1,14 @@
-A = [2,4,6]
-B = [0,0,0]
+A = [2, 4, 6]
+B = []
 
-for i in range(len(A)):
-    B[i] = A[i] 
+B.append(A[0])
+print(B)
 
+B.append(A[1])
+print(B)
+
+B.append(A[2])
+print(B)
+
+B.sort(reverse=True)
 print(B)
